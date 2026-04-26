@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Labs - LAUC | Fourier Coefficient Solver</title>
+    <title>Virtual Labs - Fourier Series | LAUC</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Math.js for safe expression evaluation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
@@ -122,54 +122,6 @@
             gap: 30px;
         }
  
-        /* Sidebar Navigation */
-        .sidebar {
-            flex: 0 0 280px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-            padding: 20px 0;
-            height: fit-content;
-        }
- 
-        .sidebar h3 {
-            padding: 0 20px 15px;
-            color: #2c3e50;
-            border-bottom: 1px solid #eee;
-            margin-bottom: 15px;
-        }
- 
-        .nav-menu {
-            list-style: none;
-        }
- 
-        .nav-item {
-            padding: 12px 25px;
-            border-left: 4px solid transparent;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
- 
-        .nav-item:hover {
-            background-color: #f8f9fa;
-            border-left-color: #3498db;
-        }
- 
-        .nav-item.active {
-            background-color: #f0f7ff;
-            border-left-color: #3498db;
-            color: #3498db;
-            font-weight: 500;
-        }
- 
-        .nav-item i {
-            width: 20px;
-            text-align: center;
-        }
- 
         /* Content Area */
         .content {
             flex: 1;
@@ -186,17 +138,6 @@
             border-bottom: 1px solid #eee;
         }
  
-        .breadcrumb {
-            font-size: 14px;
-            color: #7f8c8d;
-            margin-bottom: 8px;
-        }
- 
-        .breadcrumb a {
-            color: #3498db;
-            text-decoration: none;
-        }
- 
         .content-header h2 {
             font-size: 28px;
             color: #2c3e50;
@@ -208,7 +149,7 @@
             margin-top: 5px;
         }
  
-        /* Aim Sections */
+        /* Aim Sections (cards) */
         .aim-sections {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -254,170 +195,7 @@
             color: #7f8c8d;
         }
  
-        /* Question Section */
-        .question-section {
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            padding: 25px;
-            margin-bottom: 30px;
-            border-left: 5px solid #3498db;
-        }
- 
-        .question-section h3 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-            font-size: 22px;
-        }
- 
-        .question-text {
-            font-size: 18px;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            line-height: 1.5;
-        }
- 
-        /* Feedback Section */
-        .feedback-section {
-            background-color: #e8f4fc;
-            border-radius: 8px;
-            padding: 25px;
-            border: 1px solid #d1e7ff;
-        }
- 
-        .feedback-header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
- 
-        .feedback-header i {
-            font-size: 28px;
-            color: #3498db;
-        }
- 
-        .feedback-header h3 {
-            color: #2c3e50;
-            font-size: 22px;
-        }
- 
-        .feedback-content {
-            margin-bottom: 25px;
-        }
- 
-        .feedback-content p {
-            margin-bottom: 15px;
-            color: #2c3e50;
-            line-height: 1.6;
-        }
- 
-        .feedback-button {
-            background: linear-gradient(to right, #3498db, #2c80b9);
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            font-size: 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 500;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-        }
- 
-        .feedback-button:hover {
-            background: linear-gradient(to right, #2c80b9, #216794);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
-        }
- 
-        /* Footer */
-        footer {
-            margin-top: 40px;
-            padding: 20px 0;
-            text-align: center;
-            color: #7f8c8d;
-            font-size: 14px;
-            border-top: 1px solid #eee;
-        }
- 
-        .footer-logo {
-            display: inline-block;
-            margin: 0 5px;
-            font-weight: bold;
-            color: #2c3e50;
-        }
- 
-        /* Responsive Design */
-        @media (max-width: 992px) {
-            .main-content {
-                flex-direction: column;
-            }
-            
-            .sidebar {
-                width: 100%;
-            }
-            
-            .aim-sections {
-                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            }
-        }
- 
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                gap: 20px;
-                text-align: center;
-            }
-            
-            .logo-section {
-                flex-direction: column;
-                gap: 20px;
-                width: 100%;
-            }
-            
-            .pcce-logo-container {
-                border-right: none;
-                padding-right: 0;
-                border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-                padding-bottom: 20px;
-                justify-content: center;
-                width: 100%;
-            }
-            
-            .virtual-labs-logo {
-                justify-content: center;
-            }
-            
-            .aim-sections {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
- 
-        @media (max-width: 576px) {
-            .aim-sections {
-                grid-template-columns: 1fr;
-            }
-            
-            .content {
-                padding: 20px;
-            }
-            
-            .pcce-logo-container {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .pcce-logo-img {
-                width: 70px;
-                height: 70px;
-            }
-        }
- 
-        /* ============================================================
-           CARD PAGE NAVIGATION
-        ============================================================ */
+        /* Page specific styles */
         .card-page {
             display: none;
             animation: fadeInPage 0.3s ease;
@@ -468,123 +246,165 @@
             color: #2c3e50;
             font-weight: 700;
         }
-        /* Equation Solver Styles */
-        .solver-container {
+        .page-content-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 28px;
+            border-left: 5px solid #3498db;
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+        /* MCQ styles */
+        .mcq-question {
+            background: #fff;
+            border: 1px solid #dce8f5;
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin-bottom: 20px;
+        }
+        .mcq-question p {
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #2c3e50;
+        }
+        .mcq-option {
             display: flex;
-            flex-direction: column;
-            gap: 30px;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
         }
-        .input-panel {
-            background: #f0f7fe;
-            border-radius: 16px;
-            padding: 22px 28px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-            border: 1px solid #dce9f5;
+        .mcq-option:hover {
+            background: #e8f4fc;
         }
-        .param-group {
+        .mcq-option input[type="radio"] {
+            accent-color: #3498db;
+        }
+        .submit-btn {
+            background: linear-gradient(to right, #3498db, #2c80b9);
+            color: white;
+            border: none;
+            padding: 11px 28px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .ref-list { list-style: none; padding: 0; }
+        .ref-list li { display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid #eee; }
+        .contributors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+        .contributor-card {
+            background: #f0f7ff;
+            border-radius: 10px;
+            padding: 22px 16px;
+            text-align: center;
+            border: 1px solid #d1e7ff;
+        }
+        .feedback-form input, .feedback-form select, .feedback-form textarea {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #cde3f5;
+            border-radius: 6px;
+            margin-bottom: 18px;
+        }
+        .star-rating i {
+            font-size: 28px;
+            color: #ccc;
+            cursor: pointer;
+        }
+        .star-rating i.active, .star-rating i:hover { color: #f39c12; }
+
+        /* ========== SIMULATION SPECIFIC STYLES (Equation solver) ========== */
+        .solver-panel {
+            background: #fef9ef;
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 30px;
+            border: 1px solid #e2e9f2;
+        }
+        .input-group {
             display: flex;
             flex-wrap: wrap;
-            gap: 24px;
+            gap: 20px;
             align-items: flex-end;
             margin-bottom: 20px;
         }
-        .param-field {
+        .input-field {
             flex: 1;
-            min-width: 150px;
+            min-width: 140px;
         }
-        .param-field label {
+        .input-field label {
             display: block;
             font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 8px;
+            color: #1e4663;
+            margin-bottom: 6px;
             font-size: 0.85rem;
         }
-        .param-field input, .param-field select {
+        .input-field input, .input-field select {
             width: 100%;
-            padding: 10px 14px;
-            border: 1px solid #cbdbe0;
+            padding: 10px 12px;
             border-radius: 12px;
-            font-size: 0.95rem;
+            border: 1px solid #cbdbe0;
             background: white;
-        }
-        .compute-btn {
-            background: linear-gradient(135deg, #2c7da0, #1f5e7e);
-            color: white;
-            border: none;
-            padding: 10px 24px;
-            border-radius: 40px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
-            height: 44px;
-            font-size: 0.9rem;
-        }
-        .compute-btn:hover {
-            transform: scale(1.02);
-            background: #1f5e7e;
         }
         .coeff-table {
             background: white;
-            border-radius: 20px;
-            border: 1px solid #e2edf7;
+            border-radius: 18px;
             overflow-x: auto;
+            margin: 20px 0;
+            border: 1px solid #e2edf7;
         }
         .coeff-table table {
             width: 100%;
             border-collapse: collapse;
         }
         .coeff-table th, .coeff-table td {
-            padding: 14px 12px;
+            padding: 12px 10px;
             text-align: center;
-            border-bottom: 1px solid #e9ecef;
-        }
-        .coeff-table th {
-            background: #e8f1f9;
-            color: #1f4e6e;
-            font-weight: 700;
-        }
-        .step-by-step {
-            background: #fefef7;
-            border-radius: 18px;
-            padding: 20px 24px;
-            border-left: 6px solid #3498db;
-            box-shadow: 0 1px 5px rgba(0,0,0,0.05);
-        }
-        .step-title {
-            font-weight: 800;
-            font-size: 1.2rem;
-            color: #2c3e50;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            border-bottom: 1px solid #eef2f7;
         }
         .step-detail {
-            font-family: 'Courier New', monospace;
             background: #f8fafc;
-            padding: 12px 16px;
-            border-radius: 12px;
-            margin: 10px 0;
-            color: #1e4663;
+            padding: 14px 18px;
+            border-radius: 14px;
+            margin: 12px 0;
+            font-family: 'Courier New', monospace;
             font-size: 0.9rem;
-            line-height: 1.5;
+            border-left: 4px solid #3498db;
         }
-        .math-inline {
-            background: #eef2f7;
-            padding: 2px 6px;
-            border-radius: 8px;
-            font-family: monospace;
-        }
-        .badge-coeff {
-            background: #e1f0fa;
+        .quiz-area {
+            background: #e8f4fc;
             border-radius: 20px;
-            padding: 2px 10px;
-            font-weight: 600;
-            font-size: 0.8rem;
+            padding: 20px;
+            margin-top: 25px;
         }
-        hr {
-            margin: 15px 0;
-            border-color: #d4e2f0;
+        .quiz-input-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            margin: 12px 0;
+            background: white;
+            padding: 12px;
+            border-radius: 14px;
+        }
+        .mark-badge {
+            background: #27ae60;
+            color: white;
+            border-radius: 30px;
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .wrong-badge {
+            background: #e67e22;
         }
     </style>
 </head>
@@ -596,15 +416,15 @@
             <div class="pcce-logo-container">
                 <img src="https://raw.githubusercontent.com/dineshkute90/virtual_lab_LAUC/main/pccoe.png"
                      alt="PCOE Logo" class="pcce-logo-img" id="pcceLogo"
-                     onerror="this.onerror=null; this.src='https://via.placeholder.com/60x60/2c3e50/ffffff?text=PCOE';">
+                     onerror="this.src='https://via.placeholder.com/60x60/2c3e50/ffffff?text=PCOE';">
                 <div class="pcce-logo-text">
                     <div class="main">APPLIED SCIENCES & HUMANITIES</div>
                     <div class="sub">Pimpri Chinchwad College of Engineering</div>
                 </div>
             </div>
             <div class="virtual-labs-logo">
-                <i class="fas fa-flask"></i>
-                <h1>Virtual <span>Labs</span></h1>
+                <i class="fas fa-waveform"></i>
+                <h1>Fourier <span>Series Lab</span></h1>
             </div>
         </div>
         <div class="user-info">
@@ -615,98 +435,140 @@
 </header>
  
 <main class="container" style="padding-top: 30px; padding-bottom: 10px;">
+    <!-- Dashboard -->
     <div id="main-dashboard">
         <div class="content">
             <div class="content-header">
-                <h2>A Virtual Lab on Rank of Matrix</h2>
-                <p>Engineering Mathematics Experiment</p>
+                <h2>📈 Fourier Series Explorer: A₀, Aₙ, Bₙ Solver</h2>
+                <p>Interactive virtual lab to compute Fourier coefficients step-by-step</p>
             </div>
             <div class="aim-sections">
                 <div class="section-card active" data-target="page-aim"><i class="fas fa-bullseye"></i><h3>Aim</h3><p>Objective</p></div>
-                <div class="section-card" data-target="page-theory"><i class="fas fa-book"></i><h3>Theory</h3><p>Concepts</p></div>
-                <div class="section-card" data-target="page-pretest"><i class="fas fa-question-circle"></i><h3>Pretest</h3><p>Assessment</p></div>
-                <div class="section-card" data-target="page-simulation"><i class="fas fa-desktop"></i><h3>Simulation</h3><p>Equation Solver</p></div>
+                <div class="section-card" data-target="page-theory"><i class="fas fa-book"></i><h3>Theory</h3><p>Fourier basics</p></div>
+                <div class="section-card" data-target="page-pretest"><i class="fas fa-question-circle"></i><h3>Pretest</h3><p>Fundamentals</p></div>
+                <div class="section-card" data-target="page-simulation"><i class="fas fa-microchip"></i><h3>Simulation</h3><p>Equation solver</p></div>
                 <div class="section-card" data-target="page-posttest"><i class="fas fa-clipboard-check"></i><h3>Posttest</h3><p>Assessment</p></div>
                 <div class="section-card" data-target="page-references"><i class="fas fa-book-open"></i><h3>References</h3><p>Resources</p></div>
-                <div class="section-card" data-target="page-contributors"><i class="fas fa-users"></i><h3>Contributors</h3><p>Credits</p></div>
-                <div class="section-card" data-target="page-feedback"><i class="fas fa-comment-alt"></i><h3>Feedback</h3><p>Share</p></div>
+                <div class="section-card" data-target="page-contributors"><i class="fas fa-users"></i><h3>Contributors</h3><p>Team</p></div>
+                <div class="section-card" data-target="page-feedback"><i class="fas fa-comment-alt"></i><h3>Feedback</h3><p>Rate us</p></div>
             </div>
         </div>
     </div>
- 
-    <!-- AIM PAGE (unchanged) -->
-    <div id="page-aim" class="content card-page"><button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button><div class="card-page-header"><i class="fas fa-bullseye"></i><div><h2>Aim</h2><p>Objective</p></div></div><div class="page-content-box"><h4>Experiment Objective</h4><p>Understand rank of matrix concept, but the simulation module now features an interactive Fourier coefficient solver (A₀, Aₙ, Bₙ) to enhance equation-solving skills.</p></div></div>
-    <!-- THEORY PAGE unchanged -->
-    <div id="page-theory" class="content card-page"><button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button><div class="card-page-header"><i class="fas fa-book"></i><div><h2>Theory</h2><p>Rank & Fourier series</p></div></div><div class="page-content-box"><h4>Rank & Fourier Coefficients</h4><p>Fourier series expands periodic functions. A₀, Aₙ, Bₙ computed via integrals.</p></div></div> 
-    <!-- PRETEST unchanged -->
-    <div id="page-pretest" class="content card-page"><button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button><div class="card-page-header"><i class="fas fa-question-circle"></i><div><h2>Pretest</h2><p>Pre-assessment</p></div></div><div class="mcq-question"><p>Q1. The rank of a zero matrix of order 3×3 is:</p><label class="mcq-option"><input type="radio" name="q1" value="c"> 0</label><label class="mcq-option"><input type="radio" name="q1" value="a"> 3</label></div><div class="mcq-question"><p>Q2. Maximum rank of 4×5 matrix:</p><label class="mcq-option"><input type="radio" name="q2" value="b"> 4</label><label class="mcq-option"><input type="radio" name="q2" value="a"> 5</label></div><div class="mcq-question"><p>Q3. Operation that does NOT change rank:</p><label class="mcq-option"><input type="radio" name="q3" value="a"> Adding multiple of row to another</label></div><button class="submit-btn" onclick="submitTest('pretest')">Submit Pretest</button></div>
-    <!-- POSTTEST unchanged -->
-    <div id="page-posttest" class="content card-page"><button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button><div class="card-page-header"><i class="fas fa-clipboard-check"></i><div><h2>Posttest</h2></div></div><div class="mcq-question"><p>Q1. Rank of identity matrix n×n:</p><label class="mcq-option"><input type="radio" name="pq1" value="c"> n</label></div><div class="mcq-question"><p>Q2. System consistent if:</p><label class="mcq-option"><input type="radio" name="pq2" value="b"> Rank(A)=Rank(A|B)</label></div><button class="submit-btn" onclick="submitTest('posttest')">Submit Posttest</button></div>
-    <!-- REFERENCES unchanged -->
-    <div id="page-references" class="content card-page"><button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button><div class="card-page-header"><i class="fas fa-book-open"></i><div><h2>References</h2></div></div><ul class="ref-list"><li><i class="fas fa-book"></i>B.S. Grewal, Higher Engineering Mathematics</li></ul></div>
-    <!-- CONTRIBUTORS unchanged -->
-    <div id="page-contributors" class="content card-page"><button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button><div class="card-page-header"><i class="fas fa-users"></i><div><h2>Contributors</h2></div></div><div class="contributors-grid"><div class="contributor-card"><i class="fas fa-user-tie"></i><h4>Dr. Faculty</h4><p>PI</p></div></div></div>
-    <!-- FEEDBACK unchanged -->
-    <div id="page-feedback" class="content card-page"><button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button><div class="card-page-header"><i class="fas fa-comment-alt"></i><div><h2>Feedback</h2></div></div><div class="feedback-form"><label>Name</label><input type="text"><div class="star-rating" id="starRating"><i class="fas fa-star" data-val="1"></i><i class="fas fa-star" data-val="2"></i><i class="fas fa-star" data-val="3"></i><i class="fas fa-star" data-val="4"></i><i class="fas fa-star" data-val="5"></i></div><button class="submit-btn" onclick="submitFeedback()">Submit</button></div></div>
- 
-    <!-- ============== SIMULATION PAGE : EQUATION SOLVER (A0, An, Bn) ============== -->
+
+    <!-- AIM PAGE (Fourier) -->
+    <div id="page-aim" class="content card-page">
+        <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+        <div class="card-page-header"><i class="fas fa-bullseye"></i><div><h2>Aim</h2></div></div>
+        <div class="page-content-box">
+            <h4>Objective</h4>
+            <p>To understand Fourier series representation of periodic functions and compute the Fourier coefficients <strong>A₀, Aₙ, Bₙ</strong> using analytical/numerical methods. The experiment will enable students to:</p>
+            <ul style="margin-left: 20px;">
+                <li>Derive Euler formulas for Fourier coefficients.</li>
+                <li>Compute A₀, Aₙ, Bₙ for any given function over a period.</li>
+                <li>Verify orthogonality and step-by-step integration.</li>
+                <li>Self-evaluate by entering own coefficient values and get instant marking.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- THEORY PAGE -->
+    <div id="page-theory" class="content card-page">
+        <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+        <div class="card-page-header"><i class="fas fa-book"></i><div><h2>Theory</h2></div></div>
+        <div class="page-content-box">
+            <h4>Fourier Series</h4>
+            <p>A periodic function f(x) with period L = b−a can be expanded as: <br> <strong>f(x) = A₀/2 + Σ[Aₙ cos(2π n x/L) + Bₙ sin(2π n x/L)]</strong> <br> where coefficients are:</p>
+            <p><strong>A₀ = (2/L) ∫<sub>a</sub><sup>b</sup> f(x) dx</strong><br>
+            <strong>Aₙ = (2/L) ∫<sub>a</sub><sup>b</sup> f(x) cos(2π n x / L) dx</strong><br>
+            <strong>Bₙ = (2/L) ∫<sub>a</sub><sup>b</sup> f(x) sin(2π n x / L) dx</strong></p>
+            <p>These integrals use orthogonality of sine/cosine over one period.</p>
+        </div>
+    </div>
+
+    <!-- PRETEST (Fourier MCQs) -->
+    <div id="page-pretest" class="content card-page">
+        <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+        <div class="card-page-header"><i class="fas fa-question-circle"></i><div><h2>Pretest</h2></div></div>
+        <div class="mcq-question"><p>Q1. The constant term A₀ in Fourier series represents:</p>
+            <label class="mcq-option"><input type="radio" name="pre1" value="a"> Average value of function</label>
+            <label class="mcq-option"><input type="radio" name="pre1" value="b"> Peak amplitude</label>
+            <label class="mcq-option"><input type="radio" name="pre1" value="c"> Fundamental frequency</label></div>
+        <div class="mcq-question"><p>Q2. For a function f(x) = x on [-π, π], A₀ is:</p>
+            <label class="mcq-option"><input type="radio" name="pre2" value="a"> π</label>
+            <label class="mcq-option"><input type="radio" name="pre2" value="b"> 0</label>
+            <label class="mcq-option"><input type="radio" name="pre2" value="c"> 2π</label></div>
+        <div class="mcq-question"><p>Q3. The formula for Aₙ (n≥1) contains:</p>
+            <label class="mcq-option"><input type="radio" name="pre3" value="a"> cos(nx) term</label>
+            <label class="mcq-option"><input type="radio" name="pre3" value="b"> sin(nx) term</label>
+            <label class="mcq-option"><input type="radio" name="pre3" value="c"> both</label></div>
+        <button class="submit-btn" onclick="alert('Pretest submitted (Self check)')">Submit Pretest</button>
+    </div>
+
+    <!-- ==================== SIMULATION PAGE : Fourier Coeff Solver + Marking ==================== -->
     <div id="page-simulation" class="content card-page">
-        <button class="back-btn" onclick="goBack()">
-            <i class="fas fa-arrow-left"></i> Back to Dashboard
-        </button>
+        <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back to Dashboard</button>
         <div class="card-page-header">
-            <i class="fas fa-calculator"></i>
-            <div>
-                <h2>Fourier Coefficient Solver</h2>
-                <p>Equation solving step-by-step ➜ A₀, Aₙ, Bₙ values</p>
-            </div>
+            <i class="fas fa-square-root-alt"></i>
+            <div><h2>Fourier Coefficients Solver</h2><p>Equation solving: A₀ , Aₙ , Bₙ + step-by-step method</p></div>
         </div>
-        <div class="solver-container">
-            <div class="input-panel">
-                <div class="param-group">
-                    <div class="param-field"><label>📐 f(x) = </label><input type="text" id="funcExpr" value="x" placeholder="e.g., x, x^2, sin(x), cos(x)"></div>
-                    <div class="param-field"><label>⬅️ Left a</label><input type="number" id="intervalA" value="-3.14159" step="any"></div>
-                    <div class="param-field"><label>➡️ Right b</label><input type="number" id="intervalB" value="3.14159" step="any"></div>
-                    <div class="param-field"><label>🔢 Number of terms (N)</label><input type="number" id="numTerms" value="3" min="1" max="6" step="1"></div>
-                    <div><button class="compute-btn" id="computeCoefBtn"><i class="fas fa-play"></i> Solve & Get A₀, Aₙ, Bₙ</button></div>
-                </div>
-                <div class="param-field"><label>✨ Quick examples:</label>
-                    <select id="exampleSelect">
-                        <option value="x">f(x) = x</option>
-                        <option value="x^2">f(x) = x²</option>
-                        <option value="sin(x)">f(x) = sin(x)</option>
-                        <option value="cos(x)">f(x) = cos(x)</option>
-                        <option value="abs(x)">f(x) = |x|</option>
-                    </select>
-                </div>
-                <small><i class="fas fa-info-circle"></i> Formulas used: L = (b-a). A₀ = (2/L) ∫ f(x) dx ; Aₙ = (2/L) ∫ f(x) cos(2π n x / L) dx ; Bₙ = (2/L) ∫ f(x) sin(2π n x / L) dx</small>
+        
+        <div class="solver-panel">
+            <div class="input-group">
+                <div class="input-field"><label>📐 f(x) = </label><input type="text" id="funcExpr" value="x" placeholder="e.g., x, x^2, sin(x), cos(x)"></div>
+                <div class="input-field"><label>Left a</label><input type="number" id="intervalA" value="-3.14159" step="any"></div>
+                <div class="input-field"><label>Right b</label><input type="number" id="intervalB" value="3.14159" step="any"></div>
+                <div class="input-field"><label>Harmonics N</label><input type="number" id="numTerms" value="3" min="1" max="5" step="1"></div>
+                <div><button class="submit-btn" id="computeCoefBtn" style="margin-top:24px;"><i class="fas fa-play"></i> Compute Coefficients</button></div>
             </div>
-            <!-- Results Table: A0, An, Bn -->
-            <div class="coeff-table" id="coeffTableArea">
-                <table>
-                    <thead><tr><th>Coefficient</th><th>Value</th><th>Description</th></tr></thead>
-                    <tbody id="coeffTbody">
-                        <tr><td>A₀ (DC)</td><td colspan="2">Press "Solve" to compute</td></tr>
-                    </tbody>
-                </table>
+            <div class="input-field"><label>✨ Quick Examples:</label>
+                <select id="exampleSelect"><option value="x">f(x) = x</option><option value="x^2">f(x) = x²</option><option value="sin(x)">f(x) = sin(x)</option><option value="cos(x)">f(x) = cos(x)</option><option value="abs(x)">f(x) = |x|</option></select>
             </div>
-            <!-- Step-by-step solving method -->
-            <div class="step-by-step" id="stepByStepBlock">
-                <div class="step-title"><i class="fas fa-chalkboard-user"></i> Step-by-Step Solving Method</div>
-                <div id="stepsContainer">Click the compute button to see detailed integration steps and coefficient derivation.</div>
-            </div>
+            <small><i class="fas fa-info-circle"></i> Numeric integration (Simpson rule). L = b−a. Coefficients: A₀ = (2/L)∫ f, Aₙ = (2/L)∫ f·cos(2π n x/L), Bₙ = (2/L)∫ f·sin(2π n x/L).</small>
+        </div>
+
+        <!-- Table of computed correct coefficients -->
+        <div class="coeff-table" id="coeffTableArea">
+            <table style="width:100%">
+                <thead><tr><th>Coefficient</th><th>Value (Computed)</th><th>Description</th></tr></thead>
+                <tbody id="coeffTbody"><tr><td colspan="3">Click "Compute" to get A₀, Aₙ, Bₙ</td></tr></tbody>
+            </table>
+        </div>
+
+        <!-- Step-by-step solving method -->
+        <div class="step-detail" id="stepByStepBlock">
+            <strong><i class="fas fa-chalkboard"></i> Step-by-step method:</strong> After computation, detailed integration steps will appear.
+        </div>
+
+        <!-- Ask user values of A0, An, Bn and Mark -->
+        <div class="quiz-area" id="quizArea" style="display: none;">
+            <h4><i class="fas fa-pen-alt"></i> ✍️ Practice: Enter your own values of A₀, Aₙ, Bₙ and get marks</h4>
+            <p>Based on the computed correct coefficients above, enter your guessed coefficients below. Click "Check My Answers" to see your score.</p>
+            <div id="userInputsContainer"></div>
+            <button class="submit-btn" id="checkAnswersBtn" style="background:#2c3e50;"><i class="fas fa-check-double"></i> Check my answers & get marks</button>
+            <div id="markingResult" style="margin-top: 18px; font-weight: bold;"></div>
         </div>
     </div>
+
+    <!-- POSTTEST -->
+    <div id="page-posttest" class="content card-page">
+        <button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
+        <div class="card-page-header"><i class="fas fa-clipboard-check"></i><div><h2>Posttest</h2></div></div>
+        <div class="mcq-question"><p>Q1. For an even function, which coefficients vanish?</p><label><input type="radio" name="post1"> Bₙ</label><label><input type="radio" name="post1"> Aₙ</label></div>
+        <div class="mcq-question"><p>Q2. The Fourier series of a square wave contains only:</p><label><input type="radio" name="post2"> Odd harmonics</label><label><input type="radio" name="post2"> Even harmonics</label></div>
+        <button class="submit-btn" onclick="alert('Posttest submitted. Great learning!')">Submit Posttest</button>
+    </div>
+
+    <!-- REFERENCES -->
+    <div id="page-references" class="content card-page"><button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button><div class="card-page-header"><i class="fas fa-book-open"></i><div><h2>References</h2></div></div><ul class="ref-list"><li><i class="fas fa-book"></i> Kreyszig, Advanced Engineering Mathematics</li><li><i class="fas fa-globe"></i> MIT OCW 18.03 Fourier Series</li></ul></div>
+    <!-- CONTRIBUTORS -->
+    <div id="page-contributors" class="content card-page"><button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button><div class="card-page-header"><i class="fas fa-users"></i><div><h2>Contributors</h2></div></div><div class="contributors-grid"><div class="contributor-card"><i class="fas fa-user-tie"></i><h4>Dr. Math</h4><p>PI</p></div><div class="contributor-card"><i class="fas fa-laptop-code"></i><h4>Virtual Lab Team</h4><p>Developers</p></div></div></div>
+    <!-- FEEDBACK -->
+    <div id="page-feedback" class="content card-page"><button class="back-btn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button><div class="card-page-header"><i class="fas fa-comment-alt"></i><div><h2>Feedback</h2></div></div><div class="feedback-form"><label>Name</label><input type="text"><div class="star-rating" id="starRating"><i class="fas fa-star" data-val="1"></i><i class="fas fa-star" data-val="2"></i><i class="fas fa-star" data-val="3"></i><i class="fas fa-star" data-val="4"></i><i class="fas fa-star" data-val="5"></i></div><button class="submit-btn" onclick="alert('Thanks for feedback!')">Submit</button></div></div>
 </main>
- 
-<footer class="container">
-    <p>Virtual Labs &copy; 2025 | Applied Sciences &amp; Humanities Department |
-       <span class="footer-logo">Pimpri Chinchwad College of Engineering</span>
-    </p>
-</footer>
- 
+<footer class="container"><p>Virtual Labs &copy; 2025 | Applied Sciences & Humanities | Fourier Series Lab</p></footer>
+
 <script>
-    // Navigation logic
+    // ----- Navigation
     function openPage(targetId) {
         document.getElementById('main-dashboard').classList.add('hidden');
         document.querySelectorAll('.card-page').forEach(p => p.classList.remove('active-page'));
@@ -716,34 +578,23 @@
     function goBack() {
         document.querySelectorAll('.card-page').forEach(p => p.classList.remove('active-page'));
         document.getElementById('main-dashboard').classList.remove('hidden');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     document.querySelectorAll('.section-card').forEach(card => {
         card.addEventListener('click', function() {
             document.querySelectorAll('.section-card').forEach(c => c.classList.remove('active'));
             card.classList.add('active');
-            let target = card.getAttribute('data-target');
-            if(target) openPage(target);
+            openPage(card.getAttribute('data-target'));
         });
     });
-    function submitTest(type) { alert(`${type === 'pretest' ? 'Pretest' : 'Posttest'} submitted!`); }
-    function submitFeedback() { alert("Thank you for your feedback!"); goBack(); }
-
-    // Star rating
+    // star rating
     let selectedRating = 0;
     const stars = document.querySelectorAll('#starRating .fa-star');
-    if(stars.length) {
-        stars.forEach(star => {
-            star.addEventListener('mouseover', function() { let v = parseInt(this.getAttribute('data-val')); stars.forEach((s,idx) => s.classList.toggle('active', idx < v)); });
-            star.addEventListener('mouseout', function() { stars.forEach((s,idx) => s.classList.toggle('active', idx < selectedRating)); });
-            star.addEventListener('click', function() { selectedRating = parseInt(this.getAttribute('data-val')); stars.forEach((s,idx) => s.classList.toggle('active', idx < selectedRating)); });
-        });
-    }
+    if(stars.length) stars.forEach(s => { s.onclick = function() { selectedRating = parseInt(this.dataset.val); stars.forEach((st,idx)=>st.classList.toggle('active', idx<selectedRating)); }; });
 
-    // ----- Numerical integration (adaptive Simpson style fixed step) -----
+    // ---------- NUMERICAL INTEGRATION (SIMPSON)
     function numericIntegral(expr, a, b, variable = 'x') {
         if (a === b) return 0;
-        let steps = 2000;
+        let steps = 1600;
         let h = (b - a) / steps;
         let sum = 0;
         try {
@@ -758,73 +609,82 @@
         } catch(e) { return NaN; }
     }
 
-    function computeFourierCoefficients() {
+    let currentCoeffs = { A0: 0, An: [], Bn: [], L: 1, aVal: 0, bVal: 0, N: 0, exprStr: "" };
+
+    function computeFourier() {
         let expr = document.getElementById('funcExpr').value.trim();
         let a = parseFloat(document.getElementById('intervalA').value);
         let b = parseFloat(document.getElementById('intervalB').value);
         let N = parseInt(document.getElementById('numTerms').value);
         if (isNaN(a) || isNaN(b) || a >= b) { alert("Invalid interval: a must be less than b"); return; }
-        if (N < 1 || N > 8) N = 3;
-        let L = b - a;  // period length
-        // Integral helper
-        function integrate(fExpr, mulFunc = (x) => 1) {
-            let fullExpr = `(${fExpr}) * (${mulFunc})`;
-            return numericIntegral(fullExpr, a, b, 'x');
-        }
-        // Compute A0 = (2/L) ∫ f(x) dx
+        if (N < 1) N = 1; if (N > 6) N = 6;
+        let L = b - a;
         let integralF = numericIntegral(expr, a, b, 'x');
         let A0 = (2 / L) * integralF;
-        
         let An_vals = [], Bn_vals = [];
-        let stepsDetails = [];
-        stepsDetails.push(`📌 **Step 1 – General Formulas** : For interval length L = ${L.toFixed(5)}, Fourier coefficients: 
-        A₀ = (2/L) ∫_{${a}}^{${b}} f(x) dx ,  Aₙ = (2/L) ∫ f(x)·cos(2π n x / L) dx ,  Bₙ = (2/L) ∫ f(x)·sin(2π n x / L) dx`);
-        stepsDetails.push(`🔹 **A₀ calculation** : ∫ f(x) dx from ${a} to ${b} ≈ ${integralF.toFixed(7)} → A₀ = ${A0.toFixed(7)}`);
+        let stepDetails = [`📌 Period L = ${L.toFixed(5)}. Formulas: A₀ = (2/L)∫ f(x) dx = ${A0.toFixed(7)}`];
         
         for (let n = 1; n <= N; n++) {
-            let angFreq = (2 * Math.PI * n) / L;
-            let cosTerm = `cos(${angFreq} * x)`;
-            let sinTerm = `sin(${angFreq} * x)`;
-            let integralAn = numericIntegral(expr + ` * ${cosTerm}`, a, b, 'x');
-            let integralBn = numericIntegral(expr + ` * ${sinTerm}`, a, b, 'x');
-            let An = (2 / L) * integralAn;
-            let Bn = (2 / L) * integralBn;
+            let ang = (2 * Math.PI * n) / L;
+            let cosTerm = `cos(${ang} * x)`, sinTerm = `sin(${ang} * x)`;
+            let intAn = numericIntegral(`${expr} * ${cosTerm}`, a, b, 'x');
+            let intBn = numericIntegral(`${expr} * ${sinTerm}`, a, b, 'x');
+            let An = (2 / L) * intAn;
+            let Bn = (2 / L) * intBn;
             An_vals.push(An); Bn_vals.push(Bn);
-            stepsDetails.push(`📐 **n = ${n}**  →  Aₙ = (2/L) ∫ f(x)·cos(${angFreq.toFixed(4)} x) dx ≈ ${An.toFixed(7)}  |  Bₙ = (2/L) ∫ f(x)·sin(${angFreq.toFixed(4)} x) dx ≈ ${Bn.toFixed(7)}`);
+            stepDetails.push(`🔍 n=${n}: Aₙ = (2/L)∫ f·cos(${ang.toFixed(4)} x) dx = ${An.toFixed(7)} , Bₙ = (2/L)∫ f·sin(${ang.toFixed(4)} x) dx = ${Bn.toFixed(7)}`);
         }
+        // Store current coefficients
+        currentCoeffs = { A0, An: An_vals, Bn: Bn_vals, L, aVal: a, bVal: b, N, exprStr: expr };
         // Render table
         let tbody = document.getElementById('coeffTbody');
-        tbody.innerHTML = `<tr><td><strong>A₀</strong></td><td colspan="2">${A0.toFixed(8)}</td></tr>`;
+        tbody.innerHTML = `<tr><td><strong>A₀</strong></td><td>${A0.toFixed(8)}</td><td>DC component</td></tr>`;
         for(let i=0; i<N; i++) {
-            let nIdx = i+1;
-            tbody.innerHTML += `<tr><td><strong>A${nIdx}</strong></td><td>${An_vals[i].toFixed(8)}</td><td>Cosine coefficient for n=${nIdx}</td></tr>`;
-            tbody.innerHTML += `<tr><td><strong>B${nIdx}</strong></td><td>${Bn_vals[i].toFixed(8)}</td><td>Sine coefficient for n=${nIdx}</td></tr>`;
+            tbody.innerHTML += `<tr><td><strong>A${i+1}</strong></td><td>${An_vals[i].toFixed(8)}</td><td>Cosine coeff</td></tr>`;
+            tbody.innerHTML += `<tr><td><strong>B${i+1}</strong></td><td>${Bn_vals[i].toFixed(8)}</td><td>Sine coeff</td></tr>`;
         }
-        // Render step-by-step with formulas and intermediate approximations
-        let stepsHtml = `<div class="step-detail"><strong>⚙️ Entered function:</strong> f(x) = ${math.parse(expr).toString()}</div>`;
-        stepsHtml += `<div class="step-detail">${stepsDetails[0]}</div>`;
-        stepsHtml += `<div class="step-detail">📊 ${stepsDetails[1]}</div>`;
-        for(let i=2; i<stepsDetails.length; i++) {
-            stepsHtml += `<div class="step-detail">🔍 ${stepsDetails[i]}</div>`;
+        // Step by step display
+        let stepsHtml = `<div class="step-detail"><strong>⚙️ Step-by-step solving method:</strong><br>Function: f(x) = ${expr}. Interval [${a}, ${b}]<br>`;
+        stepsHtml += `Using Simpson's rule (1600 subintervals).<br>${stepDetails.join('<br>')}<br>✅ Final Fourier coefficients computed above.</div>`;
+        document.getElementById('stepByStepBlock').innerHTML = stepsHtml;
+        
+        // Show quiz area and generate user input fields
+        let quizDiv = document.getElementById('quizArea');
+        quizDiv.style.display = 'block';
+        let container = document.getElementById('userInputsContainer');
+        container.innerHTML = `<div class="quiz-input-row"><label><strong>A₀ (your value):</strong></label><input type="number" id="userA0" step="any" placeholder="e.g., ${A0.toFixed(4)}"></div>`;
+        for(let i=0; i<N; i++) {
+            container.innerHTML += `<div class="quiz-input-row"><label><strong>A${i+1}:</strong></label><input type="number" id="userA${i+1}" step="any" placeholder="≈ ${An_vals[i].toFixed(4)}">
+            <label style="margin-left:12px"><strong>B${i+1}:</strong></label><input type="number" id="userB${i+1}" step="any" placeholder="≈ ${Bn_vals[i].toFixed(4)}"></div>`;
         }
-        stepsHtml += `<div class="step-detail"><i class="fas fa-check-circle"></i> <strong>Result Summary:</strong> A₀ = ${A0.toFixed(6)} , `;
-        let summaryAn = An_vals.map((v,idx)=>`A${idx+1}=${v.toFixed(5)}`).join(', ');
-        let summaryBn = Bn_vals.map((v,idx)=>`B${idx+1}=${v.toFixed(5)}`).join(', ');
-        stepsHtml += `Aₙ: [${summaryAn}] , Bₙ: [${summaryBn}]</div>`;
-        stepsHtml += `<div class="step-detail">✨ <strong>Solving method:</strong> Adaptive Simpson-style numeric integration with 2000 subintervals. Each coefficient computed using orthogonal projection integrals. Step-by-step evaluation shows integrand sampled over [a,b].</div>`;
-        document.getElementById('stepsContainer').innerHTML = stepsHtml;
+        document.getElementById('markingResult').innerHTML = '';
+    }
+    
+    function checkAnswers() {
+        if (!currentCoeffs.N) { alert("Please compute coefficients first."); return; }
+        let { A0, An, Bn, N } = currentCoeffs;
+        let userA0 = parseFloat(document.getElementById('userA0')?.value);
+        let correctCount = 0, total = 1 + 2*N;
+        let feedback = [];
+        if (!isNaN(userA0) && Math.abs(userA0 - A0) < 1e-5) { correctCount++; feedback.push("✅ A₀ correct"); } else feedback.push(`❌ A₀: correct = ${A0.toFixed(6)}`);
+        for(let i=0; i<N; i++) {
+            let uAn = parseFloat(document.getElementById(`userA${i+1}`)?.value);
+            let uBn = parseFloat(document.getElementById(`userB${i+1}`)?.value);
+            if (!isNaN(uAn) && Math.abs(uAn - An[i]) < 1e-5) correctCount++; else feedback.push(`❌ A${i+1}: correct = ${An[i].toFixed(6)}`);
+            if (!isNaN(uBn) && Math.abs(uBn - Bn[i]) < 1e-5) correctCount++; else feedback.push(`❌ B${i+1}: correct = ${Bn[i].toFixed(6)}`);
+        }
+        let percent = (correctCount / total) * 100;
+        document.getElementById('markingResult').innerHTML = `<span class="mark-badge">Score: ${correctCount}/${total} (${percent.toFixed(0)}%)</span><br>${feedback.slice(0,5).join(' ; ')}${feedback.length>5?' ...':''}`;
     }
 
-    // Example selector
-    document.getElementById('exampleSelect')?.addEventListener('change', function(e) {
+    // event binding
+    document.getElementById('computeCoefBtn')?.addEventListener('click', computeFourier);
+    document.getElementById('checkAnswersBtn')?.addEventListener('click', checkAnswers);
+    document.getElementById('exampleSelect')?.addEventListener('change', (e) => {
         document.getElementById('funcExpr').value = e.target.value;
     });
-    document.getElementById('computeCoefBtn')?.addEventListener('click', computeFourierCoefficients);
-    
-    // initial load demonstration
-    window.addEventListener('DOMContentLoaded', () => {
-        if(document.getElementById('computeCoefBtn')) setTimeout(computeFourierCoefficients, 100);
-    });
+    // set initial compute on load
+    window.addEventListener('DOMContentLoaded', () => { setTimeout(computeFourier, 100); });
 </script>
 </body>
 </html>
